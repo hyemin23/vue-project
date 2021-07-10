@@ -7,9 +7,6 @@ module.exports = {
         // 'eslint:recommended',
         'plugin:vue/recommended'
     ],
-    plugins: [
-        "codebrick",
-    ],
     rules: {
         // override/add rules settings here, such as:
         // 'vue/no-unused-vars': 'error'
