@@ -4,10 +4,12 @@ import NewsView from '../components/NewsView';
 
 
 const AskView = () => import("../components/AskView");
+const UserView = () => import("../components/UserView");
 
 Vue.use(VueRouter);
 
 export const router = new VueRouter({
+    mode: 'history',
     routes: [
         {
             path: '/',
@@ -20,8 +22,12 @@ export const router = new VueRouter({
             component:NewsView,
         },
         {
-            path: '/AskView',
+            path: '/ask',
             component: AskView,
+        },
+        {
+            path: '/user',
+            component: UserView,
         },
     ]
 });
