@@ -2,6 +2,7 @@
     <div class="head">
         <router-link to="/news">news</router-link> |
         <router-link to="/ask">ask</router-link> |
+        <router-link to="/newsDataView">newsDataView</router-link> |
     </div>
 </template>
 

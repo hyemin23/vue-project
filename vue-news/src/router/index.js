@@ -1,6 +1,7 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
 import NewsView from '../components/NewsView';
+import NewsDataView from '../../views/NewsView';
 
 
 const AskView = () => import("../components/AskView");
@@ -29,6 +30,10 @@ export const router = new VueRouter({
             path: '/user',
             component: UserView,
         },
+        {
+            path: '/newsDataView'
+            ,component : NewsDataView,
+        }
     ]
 });
 
